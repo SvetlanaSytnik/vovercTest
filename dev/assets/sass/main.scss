@@ -1,0 +1,71 @@
+$grid-breakpoints: (
+  // Extra small900 screen / phone
+        xs: 0,
+  //iphone 6
+        ip: 375px,
+  // Small screen / phone
+  //      sm: 576px,
+  // Medium screen / tablet
+        md: 768px,
+  // Large screen / desktop revised!
+        lg: 900px,
+  //test
+        sd: 1024px,
+  // Extra large screen / wide desktop
+        xl: 1280px,
+  // Extra extra large screen/ very wide desktop revised!
+        xxl: 1440px,
+  // Extra extra huge screen/ very wide desktop revised!
+        hg: 1920px,
+) !default;
+//$grid-gutter-width: 30px;
+$container-max-widths: (
+        //ip: 340px,
+        //sm: 540px,
+        md: 720px,
+        lg: 900px,
+        sd: 1004px,
+        xl: 1140px,
+        xxl: 1360px,
+        hg: 1440px
+) !default;
+
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_mixins";
+@import "../../../node_modules/bootstrap/scss/_grid";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "../../../node_modules/bootstrap/scss/utilities/_flex";
+@import "../../../node_modules/bootstrap/scss/utilities/_display";
+@import "../../../node_modules/bootstrap/scss/utilities/_spacing";
+
+@import "../../../node_modules/aos/dist/aos.css";
+
+@import "lib/slick.css";
+@import "lib/slick-theme.css";
+
+@import "base/normalize";
+@import "base/fonts";
+@import "base/_variables";
+
+@import "components/homepage";
+@import "components/global";
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.no-padding {
+
+  @media (min-width: 375px) and (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
